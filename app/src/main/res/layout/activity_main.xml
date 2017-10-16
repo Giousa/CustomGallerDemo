@@ -10,10 +10,11 @@
 
     <com.zmm.customairwavedemo.galler.GallerViewPager
         android:id="@+id/galler_view_pager"
-        android:clipChildren="false"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="#ffffff" />
+        android:layout_height="500px"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:clipChildren="false"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,8 +29,8 @@
     <LinearLayout
         android:layout_width="480px"
         android:layout_height="150px"
-        android:orientation="horizontal"
-        android:background="@drawable/leg_bg">
+        android:background="@drawable/leg_bg"
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="120px"
@@ -37,10 +38,10 @@
             android:background="@drawable/leg_part1_on"/>
 
         <ImageView
-            android:visibility="invisible"
             android:layout_width="120px"
             android:layout_height="wrap_content"
-            android:background="@drawable/leg_part2_on"/>
+            android:background="@drawable/leg_part2_on"
+            android:visibility="invisible"/>
 
         <ImageView
             android:layout_width="120px"

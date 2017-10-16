@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         mGallerViewPager.setAdapter(new Adapter());
         mGallerViewPager.setPageTransformer(true, new ScaleGallerTransformer());
-        mGallerViewPager.setSliderTransformDuration(1500, null);
+        //两个ViewPager切换间隔
+        mGallerViewPager.setSliderTransformDuration(1000, null);
     }
 
     class Adapter extends GallerAdapter {

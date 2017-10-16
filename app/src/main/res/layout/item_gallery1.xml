@@ -1,18 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="500px"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginLeft="20px"
+              android:layout_marginRight="20px"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="420px"
+        android:layout_marginTop="35px"
+        android:background="@drawable/panel_blue"
         android:orientation="vertical">
 
-        <ImageView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/panel_blue"/>
+            android:layout_gravity="center_horizontal"
+            android:text="下肢训练"
+            android:textColor="#fff"
+            android:textSize="36sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="腔室"
+            android:textColor="#fff"
+            android:textSize="36sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="480px"
+            android:layout_height="150px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/leg_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="120px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/leg_part1_on"/>
+
+            <ImageView
+                android:layout_width="120px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/leg_part2_on"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:layout_width="120px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/leg_part3_on"/>
+
+            <ImageView
+                android:layout_width="120px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/leg_part4_on"/>
+
+
+        </LinearLayout>
 
 
     </LinearLayout>
